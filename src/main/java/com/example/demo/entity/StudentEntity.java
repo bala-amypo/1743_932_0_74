@@ -1,9 +1,13 @@
 package com.example.demo.entity;
 
-import jakarta.persistance.entity;
+import jakarta.persistance.Entity;
+import jakarta.persistance.GeneratedValue;
+import jakarta.persistance.Id;
 
 @Entity
 public class StudentEntity{
+    @Id
+    @GeneratedValue(strategy = GeneratedType.IDENTITY)
     private Long id;
     private String name;
     private String email;
