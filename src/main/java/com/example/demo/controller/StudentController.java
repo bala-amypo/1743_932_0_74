@@ -1,5 +1,7 @@
 package com.example.demo.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -21,8 +23,8 @@ public class StudentController {
     }
 
     @GetMapping("/getStudents")
-    public StudentEntity getStudents(){
-        return ser.g
+    public List<StudentEntity> getStudents(){
+        return ser.getStudents();
     }
     
 }
