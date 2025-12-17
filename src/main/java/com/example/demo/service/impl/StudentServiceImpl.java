@@ -3,6 +3,8 @@ package com.example.demo.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import.java.util.*;
+
 import com.example.demo.entity.StudentEntity;
 import com.example.demo.repository.StudentRepository;
 import com.example.demo.service.StudentService;
@@ -20,6 +22,6 @@ public class StudentServiceImpl implements StudentService {
 
     @Override
     public List<StudentEntity> getStudents(){
-        return repo.
+        return repo.findAll();
     }
 }
