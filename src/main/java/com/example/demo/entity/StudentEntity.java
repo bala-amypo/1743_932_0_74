@@ -1,5 +1,8 @@
 package com.example.demo.entity;
 
-public class StudentEntity{
+import jakarta.persistance.entity;
 
+@Entity
+public class StudentEntity{
+    
 }
