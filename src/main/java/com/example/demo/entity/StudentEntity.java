@@ -17,7 +17,7 @@ public class StudentEntity{
     @Email
     private String email;
 
-    @Size(Min = 0 , Max = 10)
+    @Size(min = 0 , max = 10)
     private float cgpa;
 
     public void setName(String name){
