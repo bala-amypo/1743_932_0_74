@@ -40,5 +40,4 @@ public class StudentEntity{
         this.cgpa=cgpa;
     }
 
-
 }
