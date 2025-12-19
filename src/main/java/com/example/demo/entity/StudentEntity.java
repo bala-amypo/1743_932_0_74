@@ -10,7 +10,11 @@ public class StudentEntity{
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+    @NotBlank(message = "Name is empty")
     private String name;
+
+    @NotBlank(message = "Name is empty");
+    @Email
     private String email;
     private float cgpa;
 
